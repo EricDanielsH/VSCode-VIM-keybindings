@@ -1,7 +1,11 @@
 {
   // Prettier
-  "[javascript]": {
+  "[c]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -10,10 +14,21 @@
     "editor.defaultFormatter": "Prisma.prisma"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   },
 
   "C_Cpp.addNodeAddonIncludePaths": true,
@@ -21,7 +36,7 @@
   "terminal.integrated.gpuAcceleration": "off",
   "workbench.preferredHighContrastColorTheme": "Default Dark+",
   "editor.accessibilitySupport": "off",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "file-icons",
   "vscode_vibrancy.theme": "Tokyo Night Storm",
   "files.autoSave": "afterDelay",
   "explorer.confirmDelete": false,
@@ -37,11 +52,10 @@
   "workbench.startupEditor": "none",
 
   "json.schemas": [],
-  "editor.tabSize": 2,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "workbench.colorTheme": "Everforest Dark",
+  "workbench.colorTheme": "One Dark Pro Darker",
 
   // VIM SETTINGS
   "vim.foldfix": true,
@@ -57,7 +71,7 @@
     },
     {
       "before": ["leader", "w"],
-      "commands": [":w!"]
+      "commands": [":w"]
     },
     {
       "before": ["leader", "q"],
@@ -108,6 +122,7 @@
       "before": ["K"],
       "commands": ["editor.action.moveLinesUpAction"]
     },
+    // Open terminal
     // Create split windows
     {
       "before": ["leader", "v"],
@@ -133,8 +148,6 @@
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
   ],
   "vim.useSystemClipboard": true,
-  "editor.fontSize": 12,
-  "window.zoomLevel": 1,
   "editor.minimap.enabled": false,
   "zenMode.hideLineNumbers": false,
   "editor.lineNumbers": "relative",
@@ -145,5 +158,19 @@
   "explorer.confirmDragAndDrop": false,
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.ignoreRecommendations": false,
-  "breadcrumbs.enabled": false
+  "breadcrumbs.enabled": false,
+  "redhat.telemetry.enabled": true,
+  "git.openRepositoryInParentFolders": "always",
+  "workbench.activityBar.location": "hidden",
+  "editor.cursorBlinking": "expand",
+  "editor.guides.bracketPairs": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
+  "oneDarkPro.bold": true,
+  "oneDarkPro.vivid": true,
+  "editor.fontFamily": "'Cascadia Code PL', Menlo, Monaco",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.tabSize": 2
 }
